@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Tic Tac Toe</title>
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/b8200729a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="modal-container" id="modal-container">
+        <div class="modal modal-close" id="modal">
+            <div class="message">
+                <h2>The winner is: </h2>
+            </div>
+            <div class="reset">
+                <button class="button button-reset" id="resetButtonModal">Reset</button>
+            </div> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>TIC TAC TOE</h1>
+            <nav>
+                
+                <div class="rival"> 
+                    <p>Challenger</p> 
+                    <div class="options">
+                        <button class="button" id="multiplayer">MultiPlayer</button>
+                        <button class="button" id="computer">Computer</button>
+                    </div>
+                </div>
+                
+                
+                <div class="level">
+                    <p>Level</p>
+                    <div class="options">
+                        <button class="button" id="easy">Easy</button>
+                        <button class="button" id="hard">Hard</button>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+        <div class="displayPlayer playerX" id="displayPlayer"></div>
+        <div class="content">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="reset">
+            <button class="button button-reset" id="resetButton">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>
